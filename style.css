@@ -1,0 +1,42 @@
+:root {
+    --color1: #0D0D0D;
+    --color2: #EAF205;
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--color1);
+}
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 5px var(--color2), 0 0 25px var(--color2);
+    cursor: crosshair;
+}
+
+.clock:hover {
+    text-shadow: 0 0 5px var(--color2),
+    0 0 25px var(--color2), 0 0 50px var(--color2),
+    0 0 100px var(--color2), 0 0 200px var(--color2);
+    transition: text-shadow 2s ease-in-out;
+}
+
+#date {
+    font-size: 30px;
+    text-align: center;
+    color: var(--color2);
+    margin-bottom: 0;
+}
+
+#time {
+    margin-top: 0;
+    text-align: center;
+    font-size: 100px;
+    color: var(--color2);
+}
